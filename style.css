@@ -4,26 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* 預設字體大小與左側間距 */
+    /* 先設定全域的左側內邊距 */
     body {
-      font-size: 20px;
       padding-left: 2em;
     }
     
-    /* 桌面版：字體更大 */
+    /* 電腦版：螢幕寬度大於等於 768px */
     @media only screen and (min-width: 768px) {
       body {
-        font-size: 32px;
-        padding-left: 2em;
+        font-size: 32px; /* 本文文字大小 */
+      }
+      h1 {
+        font-size: 28px; /* 電腦版標題縮小 */
+      }
+      img {
+        width: 50%;   /* 圖片縮小 50% */
+        height: auto;
       }
     }
     
-    /* 手機版：字體更大以提升可讀性 */
+    /* 手機版：螢幕寬度小於 768px */
     @media only screen and (max-width: 767px) {
       body {
-        font-size: 44px;
-        padding-left: 2em;
+        font-size: 60px; /* 放大兩個量，讓本文文字更大 */
       }
+      h1 {
+        font-size: 70px; /* 手機版標題大小，可依需求調整 */
+      }
+      /* 圖片部分如果需要調整，也可另外設定 */
     }
   </style>
 </head>
