@@ -1,42 +1,55 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    /* 先設定全域的左側內邊距 */
+ <style>
+    /* ---- 預設樣式 ---- */
     body {
-      padding-left: 2em;
+      margin: 0;               /* 移除預設外邊距 */
+      padding: 1em;            /* 只留一點左右邊距，避免文字貼邊 */
+      font-size: 18px;         /* 預設本文大小 */
+      line-height: 1.5;        /* 增加行距，提升可讀性 */
+      box-sizing: border-box;  /* 讓 padding/width 計算更直覺 */
+      max-width: 100%;         /* 使 body 不會超過螢幕寬度 */
     }
-    
-    /* 電腦版：螢幕寬度大於等於 768px */
-    @media only screen and (min-width: 768px) {
+
+    /* 預設標題大小 */
+    h1 {
+      font-size: 24px;
+      margin: 0 0 0.5em 0;     /* 與後方文字保持一點距離 */
+    }
+
+    /* 圖片預設為容器寬度 50% */
+    img {
+      width: 50%;
+      height: auto;
+      display: block;
+      margin: 1em auto;        /* 讓圖片置中，與文字上下有點間距 */
+      max-width: 100%;         /* 確保不會超過容器寬度 */
+    }
+
+    /* ---- 桌面版 (螢幕寬度 >= 768px) ---- */
+    @media screen and (min-width: 768px) {
       body {
-        font-size: 32px; /* 本文文字大小 */
+        font-size: 20px;   /* 電腦版本文大小 */
       }
       h1 {
-        font-size: 28px; /* 電腦版標題縮小 */
+        font-size: 28px;   /* 電腦版標題稍微縮小，避免過大 */
       }
       img {
-        width: 50%;   /* 圖片縮小 50% */
-        height: auto;
+        width: 50%;        /* 依然維持 50%，若想更小可再調整 */
       }
     }
-    
-    /* 手機版：螢幕寬度小於 768px */
-    @media only screen and (max-width: 767px) {
+
+    /* ---- 手機版 (螢幕寬度 < 768px) ---- */
+    @media screen and (max-width: 767px) {
       body {
-        font-size: 40px; /* 放大兩個量，讓本文文字更大 */
+        font-size: 24px;   /* 手機版再放大文字，兩個量級以上 */
+        padding: 1em;      /* 僅保留 1em 邊距，讓文字可以拉到螢幕右邊 */
       }
       h1 {
-        font-size: 60px; /* 手機版標題大小，可依需求調整 */
+        font-size: 30px;   /* 手機版標題比本文再大一點 */
       }
-      /* 圖片部分如果需要調整，也可另外設定 */
+      img {
+        /* 如果想讓手機版的圖片也維持 50%，可保留下面這行
+           若覺得太小，可改為 80% 或 100% */
+        width: 50%;
+      }
     }
   </style>
-</head>
-<body>
-  <!-- 此處放入你的網頁內容 -->
-  <p>這是一段測試文字，確認字體大小與左側間距是否符合需求。</p>
-</body>
-</html>
