@@ -18,7 +18,7 @@ form.addEventListener('submit', function(event) {
     if (count1 < 3) {
       result.innerHTML = '小孩還是持續哭鬧';
     } else {
-      result.innerHTML = '小孩終於冷靜下來，<br><span style="color:green;">恭喜你完成安撫。</span>恭喜你完成安撫。';
+      result.innerHTML = '小孩終於冷靜下來，<br><span style="color:green;">恭喜你完成安撫。</span>';
       document.querySelector("form [type='submit']").style.display = "none";
       count1 = 0;
     }
