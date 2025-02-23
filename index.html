@@ -2,37 +2,37 @@
 <html lang="en" >
 <head>
   <meta charset="UTF-8">
-  <title>CodePen - BM_1-5_to-all_change-size</title>
-  <link rel="stylesheet" href="./style.css">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+ <style>
+    /* 預設字體大小與左側間距 */
+    body {
+      font-size: 20px;
+      padding-left: 2em;
+    }
+    
+    /* 桌面版：字體更大 */
+    @media only screen and (min-width: 768px) {
+      body {
+        font-size: 32px;
+        padding-left: 2em;
+      }
+    }
+    
+    /* 手機版：字體更大以提升可讀性 */
+    @media only screen and (max-width: 767px) {
+      body {
+        font-size: 44px;
+        padding-left: 2em;
+      }
+    }
+  </style>
 
 </head>
 <body>
 <!-- partial:index.partial.html -->
 <!DOCTYPE html>
 <html>
-<head>
-    <style>
-    /* 預設字體大小 */
-    body {
-      font-size: 16px;
-    }
-    
-    /* 在電腦上，字體大小不變 */
-    @media only screen and (min-width: 768px) {
-      body {
-        font-size: 24px;
-      }
-    }
-    
-    /* 在手機上，字體大小更改為 40px */
-    @media only screen and (max-width: 767px) {
-      body {
-        font-size: 36px;
-      }
-    }
-  </style>
+
   <style>
     
     .credit {
