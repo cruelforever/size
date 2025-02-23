@@ -2,7 +2,7 @@
 body {
   margin: 0;               /* 移除預設外邊距 */
   padding: 1em;            /* 只留一點左右邊距，避免文字貼邊 */
-  font-size: 18px;         /* 預設本文大小 */
+  font-size: 24px;         /* 預設本文大小 */
   line-height: 1.5;        /* 增加行距，提升可讀性 */
   box-sizing: border-box;  /* 讓 padding/width 計算更直覺 */
   max-width: 100%;         /* 使 body 不會超過螢幕寬度 */
@@ -10,7 +10,7 @@ body {
 
 /* 預設標題大小 */
 h1 {
-  font-size: 24px;
+  font-size: 40px;
   margin: 0 0 0.5em 0;     /* 與後方文字保持一點距離 */
 }
 
@@ -21,7 +21,7 @@ h1 {
   left: 0;
   padding: 10px;
   background-color: lightorange;
-  font-size: 16px;
+  font-size: 24px;
 }
 
 /* 圖片預設為容器寬度 50% */
@@ -36,10 +36,10 @@ img {
 /* ---- 桌面版 (螢幕寬度 >= 768px) ---- */
 @media screen and (min-width: 768px) {
   body {
-    font-size: 20px;   /* 電腦版本文大小 */
+    font-size: 32px;   /* 電腦版本文大小 */
   }
   h1 {
-    font-size: 28px;   /* 電腦版標題稍微縮小，避免過大 */
+    font-size: 40px;   /* 電腦版標題稍微縮小，避免過大 */
   }
   img {
     width: 25%;        /* 依然維持 50%，若想更小可再調整 */
