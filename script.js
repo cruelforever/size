@@ -26,7 +26,7 @@ form.addEventListener('submit', function(event) {
   else if (selectedOption === '4') {
     const outcome = Math.random();
     if (outcome < 0.5) {
-      result.innerHTML = "小孩終於冷靜下來，<br><span style="color:green;">恭喜你完成安撫。</span>";  
+      result.innerHTML = "小孩終於冷靜下來，<br><span style='color:green;'>恭喜你完成安撫。</span>";  
       document.querySelector("form [type='submit']").style.display = "none";
     } else {
       result.innerHTML = "小孩甩開貼紙，還是繼續哭。";
