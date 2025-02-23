@@ -20,7 +20,7 @@ h1 {
   bottom: 0;
   left: 0;
   padding: 10px;
-  background-color: lightgray;
+  background-color: lightorange;
   font-size: 16px;
 }
 
@@ -42,7 +42,7 @@ img {
     font-size: 28px;   /* 電腦版標題稍微縮小，避免過大 */
   }
   img {
-    width: 50%;        /* 依然維持 50%，若想更小可再調整 */
+    width: 25%;        /* 依然維持 50%，若想更小可再調整 */
   }
 }
 
