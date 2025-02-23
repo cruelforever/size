@@ -1,26 +1,34 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    /* 預設字體大小 */
+    /* 預設字體大小與左側間距 */
     body {
-      font-size: 16px;
+      font-size: 20px;
+      padding-left: 2em;
     }
     
-    /* 在電腦上，字體大小不變 */
+    /* 桌面版：字體更大 */
     @media only screen and (min-width: 768px) {
       body {
-        font-size: 24px;
+        font-size: 32px;
+        padding-left: 2em;
       }
     }
     
-    /* 在手機上，字體大小更改為 40px */
+    /* 手機版：字體更大以提升可讀性 */
     @media only screen and (max-width: 767px) {
       body {
-        font-size: 36px;
+        font-size: 44px;
+        padding-left: 2em;
       }
     }
   </style>
 </head>
-
+<body>
+  <!-- 此處放入你的網頁內容 -->
+  <p>這是一段測試文字，確認字體大小與左側間距是否符合需求。</p>
+</body>
 </html>
