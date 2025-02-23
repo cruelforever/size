@@ -18,9 +18,9 @@ h1 {
 .credit {
   position: fixed;
   bottom: 0;
-  left: 0;
+  right: 0;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #F2F0C0;
   font-size: 24px;
 }
 
